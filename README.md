@@ -2,7 +2,7 @@
 
 A hands-on Linux operations lab for practicing service troubleshooting, system inspection, recovery, and repeatable health checks with Bash.
 
-## Why it exists
+## Overview
 
 Production issues do not always start in application code. A failed request might come from a stopped service, a permission problem, a missing listener, DNS, routing, or host resource pressure.
 
@@ -91,7 +91,7 @@ The individual lab writeups are in:
 - [`labs/03-networking.md`](labs/03-networking.md)
 - [`labs/04-system-health.md`](labs/04-system-health.md)
 
-## Reliability and tradeoffs
+## Tradeoffs and limits
 
 **Service failure:** a controlled outage is investigated through service state, logs, process state, and the listening socket before recovery. The service is then restored and checked again at both the OS and HTTP layers.
 
@@ -115,7 +115,7 @@ This project does not claim benchmark or production-availability results. Its ve
 - host-health information can be collected consistently through the Bash script
 - the same troubleshooting workflow can be applied across service, permission, network, and resource scenarios
 
-## What I'd do next
+## Next steps
 
 - Add automated smoke tests for the health script and the example service so the repository can validate expected behavior in CI.
 - Run the same exercises on a small Linux VM or cloud instance to compare WSL2 behavior with a more production-like host environment.
