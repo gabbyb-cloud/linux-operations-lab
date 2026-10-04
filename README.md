@@ -57,7 +57,7 @@ The script reports hostname, CPU count, uptime and load, memory usage, root file
 
 The repository also includes the example unit file at `systemd/linux-lab.service`. Because it reflects the original local lab setup, update `User=` and `WorkingDirectory=` before installing it on another machine.
 
-## Testing and verification
+## Testing and evidence
 
 This repository is an operations lab rather than an application test suite, so verification is done through repeatable troubleshooting scenarios and command-level checks.
 
